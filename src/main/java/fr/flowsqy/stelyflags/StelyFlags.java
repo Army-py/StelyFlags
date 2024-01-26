@@ -8,12 +8,18 @@ public class StelyFlags {
 
     public static StateFlag SPAWN_SPAWNER;
     public static StateFlag INTERACT_VILLAGER;
+    public static StateFlag USE_ASCEND_COMMAND;
+    public static StateFlag USE_DESCEND_COMMAND;
 
     public static void load(FlagRegistry flagRegistry) {
         if (SPAWN_SPAWNER == null)
             SPAWN_SPAWNER = registerFlag(flagRegistry, "spawn-spawner", true);
         if (INTERACT_VILLAGER == null)
             INTERACT_VILLAGER = registerFlag(flagRegistry, "interact-villager", false);
+        if (USE_ASCEND_COMMAND == null)
+            USE_ASCEND_COMMAND = registerFlag(flagRegistry, "use-ascend-command", false);
+        if (USE_DESCEND_COMMAND == null)
+            USE_DESCEND_COMMAND = registerFlag(flagRegistry, "use-descend-command", false);
     }
 
     private static StateFlag registerFlag(FlagRegistry flagRegistry, String flagName, boolean defaultValue) {
