@@ -17,9 +17,9 @@ public class StelyFlags {
         if (INTERACT_VILLAGER == null)
             INTERACT_VILLAGER = registerFlag(flagRegistry, "interact-villager", false);
         if (USE_ASCEND_COMMAND == null)
-            USE_ASCEND_COMMAND = registerFlag(flagRegistry, "use-ascend-command", false);
+            USE_ASCEND_COMMAND = registerFlag(flagRegistry, "use-ascend-command", true);
         if (USE_DESCEND_COMMAND == null)
-            USE_DESCEND_COMMAND = registerFlag(flagRegistry, "use-descend-command", false);
+            USE_DESCEND_COMMAND = registerFlag(flagRegistry, "use-descend-command", true);
     }
 
     private static StateFlag registerFlag(FlagRegistry flagRegistry, String flagName, boolean defaultValue) {
